@@ -1,16 +1,19 @@
 body {
     text-align: center;
 }
-#logo {
+::selection{
+    background-color: black;
+    color: white;
+}
+nav img {
     height: 45px;
     width: auto;
     margin-top: -2px;
+    position: relative;
+    top: -3px;
 }
 #sobi {
     width: 100%;
-}
-section {
-    margin-bottom: 20px;
 }
 p {
     font-size: 19px;
@@ -24,6 +27,14 @@ table {
 }
 .name {
     width: 450px;
+}
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 100px;
 }
 .rd{
     width: 200px;
@@ -55,7 +66,7 @@ table a:hover{
 }
 div a {
     color: white;
-    font-family: fantasy;
+    font-family: 'mate';
     font-size: 20px;
 }
 table a{
@@ -106,14 +117,9 @@ footer {
     padding-bottom: 30px;
     padding-top: 20px;
 }
-marquee {
-    margin-top: -400px;
-    margin-bottom: 350px;
-    color: white;
-    font-family: 'mate', serif;
-    font-size: 35px;
-    width: 900px;
-    font-weight: 700;
+
+.med{
+    position: relative;
 }
 @media (max-width: 575px) {
     .med {
@@ -121,21 +127,51 @@ marquee {
         font-weight: 600;
         font-family: 'Mate', serif;
     }
+    
+    .form{
+        width: 280px;
+        height: 380px;
+        position: relative;
+        margin: 6% auto;
+        background-color: white;
+        border-radius: 10px;
+        padding: 5px;
+    
+    }
 }
 @media (min-width: 576px) {
     .med {
         font-size: 35px;
         font-family: 'Mate', serif;
     }
+    
+    .form{
+        width: 280px;
+        height: 380px;
+        position: relative;
+        margin: 6% auto;
+        background-color: white;
+        border-radius: 10px;
+        padding: 5px;
+    
+    }
 }
 @media (max-width: 575px) {
     .n {
         font-size: 17px;
     }
+    .avat{
+        position: relative;
+        top: 15px;
+    }
 }
 @media (min-width: 576px) {
     .n {
         font-size: 20px;
+    }
+    .avat{
+        position: relative;
+        top: 30px;
     }
 }
 .sp {
@@ -146,12 +182,16 @@ marquee {
     margin-top: -350px;
     margin-bottom: 300px;
 }
+.form{
+    padding-top: 50px;
+    
+}
 @media (max-width: 575px) {
     audio {
         width: 250px;
         border: 0px;
     }
-    .container {
+    .ccontainer {
         margin-left: 0;
     }
     .pagination{
@@ -163,8 +203,8 @@ marquee {
         width: 350px;
         border: 0px;
     }
-    .container{
-        margin-left: 80px;
+    .ccontainer{
+        padding-left: 100px;
     }
     .pagination{
         margin-left: 300px;;
@@ -177,18 +217,21 @@ blockquote {
     margin-bottom: 25px;
 }
 @media (max-width: 800px) {
-    .container {
+    .ccontainer {
         margin-left: 0;
     }
     #imp {
         margin-right: 15px;
         margin-left: 0px;
     }
+   
+
 }
 @media (min-width: 801px) {
-    .container{
+    .ccontainer{
         margin-left: 0px;
     }
+    
 }
 #imp {
     margin-bottom: 20px;
@@ -214,4 +257,147 @@ blockquote {
 audio{
     outline: none;
     color: black;
+}
+@media (max-width: 400px) {
+    marquee {
+        position: relative;
+        top: -100px;
+        color: white;
+        font-family: 'mate', serif;
+        font-size: 25px;
+        width: 400px;
+        font-weight: 700;
+    }
+    .spe{
+        height: auto;
+    }
+    .ccontainer {
+        padding-left: 20px;
+    }
+    .al{
+        position: relative;
+        top: -50px;
+    }
+}
+@media (min-width: 401px) and (max-width: 992px) {
+    marquee {
+        position: relative;
+        top: -150px;
+        color: white;
+        font-family: 'mate', serif;
+        font-size: 25px;
+        width: 400px;
+        font-weight: 700;
+    }
+    .spe{
+        height: auto;
+    }
+    .ccontainer {
+        padding-left: 20px;
+    }
+    .al{
+        position: relative;
+        top: -50px;
+    }
+}
+@media (min-width: 993px) {
+    marquee {
+        position: relative;
+        top: -375px;
+        color: white;
+        font-family: 'mate', serif;
+        font-size: 35px;
+        width: 900px;
+        font-weight: 700;
+    }
+    .spe{
+        height: 10pc;
+    }
+    .ccontainer {
+        padding-left: 100px;
+    }
+    .al{
+        position: relative;
+        top: -200px;
+    }
+}
+.body1{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+th{
+    vertical-align: bottom;
+}
+#exp{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.input{
+    width: 70%;
+    margin: 20px 0px;
+    position: relative;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    outline: none;
+    
+}
+.btn-success{
+    width: 50%;
+    position: relative;
+    margin-top: 30px;
+}
+.ch{
+    padding-top: 10px;
+}
+abbr{
+    position: relative;
+    left: -15px;
+}
+@media (min-width: 768px) {
+    .spe{
+        height: 10em;
+    }
+    #rd{
+        display: none;
+    }
+}
+input[type = "checkbox"]{
+    position: relative;
+    height: 25px;
+    width: 50px;
+    -webkit-appearance: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: 500ms;
+    outline: none;
+}
+input:checked[type = "checkbox"]{
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 1);
+}
+input[type = "checkbox"]::before{
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background-color: white;
+    transform: scale(0.8);
+    box-shadow: 2px 0px 2px;
+    transition: .5s;
+    outline: none;
+}
+input:checked[type = "checkbox"]::before{
+    left: 25px;
+    outline: none;
+}
+.duru{
+    font-size: 25px;
+    font-family: 'mate', serif;
+    font-weight: 100;
+}
+#inp{
+    outline: none;
 }
